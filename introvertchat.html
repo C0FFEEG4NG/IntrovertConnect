@@ -11,7 +11,18 @@
     <h2>🌙 Introvert Lounge</h2>
     <div id="chat-box"></div>
     <div class="chat-input">
-      <input type="text" id="message-input" placeholder="Type something soft..." />
+<div class="music-player">
+  <button id="music-toggle">🎧 Toggle Music</button>
+  <iframe id="lofi-player"
+    src="https://www.youtube.com/embed/i-_1Os7hVDw?autoplay=1&loop=1&playlist=i-_1Os7hVDw"
+    frameborder="0"
+    allow="autoplay"
+    allowfullscreen
+    style="display:none; width:0; height:0;">
+  </iframe>
+</div>
+
+      <input type="text" id="message-input" placeholder="Type something..." />
       <button onclick="sendMessage()">Send</button>
     </div>
   </div>
