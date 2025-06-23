@@ -26,7 +26,6 @@
       <button onclick="sendMessage()">Send</button>
     </div>
   </div>
-
   <script>
     function sendMessage() {
       const input = document.getElementById("message-input");
@@ -48,4 +47,15 @@
     });
   </script>
 </body>
+<script>
+  const musicBtn = document.getElementById("music-toggle");
+  const lofiPlayer = document.getElementById("lofi-player");
+  let musicOn = false;
+
+  musicBtn.addEventListener("click", () => {
+    musicOn = !musicOn;
+    lofiPlayer.style.display = musicOn ? "block" : "none";
+    musicBtn.textContent = musicOn ? "🎧 Music: ON" : "🎧 Music: OFF";
+  });
+</script>
 </html>
